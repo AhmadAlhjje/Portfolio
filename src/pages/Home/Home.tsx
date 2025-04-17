@@ -4,7 +4,7 @@
 
   const Home: React.FC = () => {
     return (
-      <section id="home" className="min-h-screen flex flex-col md:flex-row items-center justify-center px-8 py-16 bg-[#1f242d]">
+      <section id="home" className="min-h-screen flex flex-col md:flex-row items-center justify-center px-8 py-16 bg-[#323946]">
         {/* Text Content with Animation */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}

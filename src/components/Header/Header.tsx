@@ -5,7 +5,7 @@ const Header: React.FC = () => {
   const [menuActive, setMenuActive] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full py-4 px-8 bg-[#1f242d] z-50">
+    <header className="fixed top-0 left-0 w-full py-4 px-8 bg-[#323946] z-50">
       <div className="flex justify-between items-center">
         {/* Logo */}
         <a href="#" className="text-white text-2xl font-bold cursor-default">Portfolio</a>
@@ -64,7 +64,7 @@ const Header: React.FC = () => {
           >
             About
           </Link>
-          <Link
+          {/* <Link
             to="services"
             spy={true}
             smooth={true}
@@ -74,7 +74,7 @@ const Header: React.FC = () => {
             onClick={() => setMenuActive(false)}
           >
             Services
-          </Link>
+          </Link> */}
           <Link
             to="portfolio"
             spy={true}

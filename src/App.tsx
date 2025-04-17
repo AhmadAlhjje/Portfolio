@@ -2,9 +2,9 @@ import React from 'react';
 import Header from '../src/components/Header/Header';
 import Home from '../src/pages/Home/Home';
 import About from '../src/pages/About/About';
-import Services from '../src/pages/Services/Services';
+// import Services from '../src/pages/Services/Services';
 import Portfolio from '../src/pages/Portfolio/Portfolio';
-import Contact from '../src/pages/Contact/Contact';
+import Contact from './pages/Contact/Contact';
 import Footer from '../src/components/Footer/Footer';
 
 const App: React.FC = () => {
@@ -22,9 +22,9 @@ const App: React.FC = () => {
         <section id="about">
           <About />
         </section>
-        <section id="services">
+        {/* <section id="services">
           <Services />
-        </section>
+        </section> */}
         <section id="portfolio">
           <Portfolio />
         </section>

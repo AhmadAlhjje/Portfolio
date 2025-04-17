@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="min-h-screen flex flex-col md:flex-row items-center justify-center px-8 py-16 bg-[#323946] gap-8">
+    <section id="about" className="min-h-screen flex flex-col md:flex-row items-center justify-center px-8 py-16 bg-[#1f242d] gap-8">
       {/* Image Section with Animation */}
       <motion.div
         initial={{ opacity: 0, x: -50 }}
