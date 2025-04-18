@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { PhotoProvider, PhotoView } from "react-photo-view"; // مكتبة Lightbox
