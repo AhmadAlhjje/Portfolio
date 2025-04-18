@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll'; // لتمرير الأقسام داخل الصفحة الرئيسية
+import { Link as RouterLink } from 'react-router-dom'; // للتنقل بين الصفحات
 
 const Header: React.FC = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -8,7 +9,9 @@ const Header: React.FC = () => {
     <header className="fixed top-0 left-0 w-full py-4 px-8 bg-[#323946] z-50">
       <div className="flex justify-between items-center">
         {/* Logo */}
-        <a href="#" className="text-white text-2xl font-bold cursor-default">Portfolio</a>
+        <RouterLink to="/" className="text-white text-2xl font-bold cursor-pointer">
+          Portfolio
+        </RouterLink>
 
         {/* Menu Icon (for mobile) */}
         <button
@@ -42,18 +45,17 @@ const Header: React.FC = () => {
         <nav
           className={`md:flex ${menuActive ? 'block' : 'hidden'} md:static absolute top-16 right-0 w-full md:w-auto bg-[#1f242d] md:bg-transparent`}
         >
-          <Link
-            to="home"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+          {/* Home */}
+          <RouterLink
+            to="/"
             className="block md:inline-block px-4 py-2 text-white text-lg font-medium hover:text-[#0ef] cursor-pointer"
             onClick={() => setMenuActive(false)}
           >
             Home
-          </Link>
-          <Link
+          </RouterLink>
+
+          {/* About */}
+          <ScrollLink
             to="about"
             spy={true}
             smooth={true}
@@ -63,19 +65,10 @@ const Header: React.FC = () => {
             onClick={() => setMenuActive(false)}
           >
             About
-          </Link>
-          {/* <Link
-            to="services"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            className="block md:inline-block px-4 py-2 text-white text-lg font-medium hover:text-[#0ef] cursor-pointer"
-            onClick={() => setMenuActive(false)}
-          >
-            Services
-          </Link> */}
-          <Link
+          </ScrollLink>
+
+          {/* Projects */}
+          <ScrollLink
             to="portfolio"
             spy={true}
             smooth={true}
@@ -85,8 +78,10 @@ const Header: React.FC = () => {
             onClick={() => setMenuActive(false)}
           >
             Projects
-          </Link>
-          <Link
+          </ScrollLink>
+
+          {/* Contact */}
+          <ScrollLink
             to="contact"
             spy={true}
             smooth={true}
@@ -96,7 +91,7 @@ const Header: React.FC = () => {
             onClick={() => setMenuActive(false)}
           >
             Contact
-          </Link>
+          </ScrollLink>
         </nav>
       </div>
     </header>
