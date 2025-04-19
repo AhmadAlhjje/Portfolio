@@ -6,7 +6,6 @@ import { Link } from "react-router-dom"; // استيراد Link
 interface Project {
   id: number;
   title: string;
-  description: string;
   image: string;
 }
 
@@ -14,23 +13,24 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "مشروع العقارات",
-    description: "موقع إلكتروني لعرض العقارات وبيعها.",
+    title: " Real Estate Project",
     image: "/assets/عقارات 1.png",
   },
   {
     id: 2,
-    title: "مشروع ملاعب",
-    description: "تصميم واجهة مستخدم جميلة ومتجاوبة.",
+    title: "Football Field Booking Platform",
     image: "/assets/ملعب 1.png",
   },
   {
     id: 3,
-    title: "مشروع السوشال ميديا",
-    description: "منصة للتسوق الإلكتروني مع سلة مشتريات.",
-    image: "/assets/سوشال 1.png",
+    title: "Simple Product Purchase Platform",
+    image: "/assets/متجر 1.png",
   },
-  
+  // {
+  //   id: 4,
+  //   title: "مشروع السوشال ميديا",
+  //   image: "/assets/سوشال 1.png",
+  // },
 ];
 
 const Portfolio: React.FC = () => {
@@ -58,10 +58,9 @@ const Portfolio: React.FC = () => {
             />
             <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500 flex justify-center items-center">
               <div className="text-center">
-                <h4 className="text-3xl font-bold text-white">
+                <h4 className="text-3xl font-bold text-white mb-10">
                   {project.title}
                 </h4>
-                <p className="text-lg text-white mb-4">{project.description}</p>
                 <Link
                   to={`/project/${project.id}`} // رابط إلى صفحة تفاصيل المشروع
                   className="inline-flex justify-center items-center w-12 h-12 bg-white text-[#323946] rounded-full"

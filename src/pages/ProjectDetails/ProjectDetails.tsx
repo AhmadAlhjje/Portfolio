@@ -15,9 +15,10 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "مشروع العقارات",
-    description:
-      "موقع إلكتروني لعرض العقارات وبيعها. يحتوي الموقع على واجهة مستخدم جميلة وميزات متقدمة مثل البحث عن العقارات وتصفية النتائج.",
+    title: "Real Estate Project ",
+    description: `Built a real estate listing web application with search,
+                  filtering, and dynamic API integration.
+                  Developed a responsive UI using React.js and Bootstrap`,
     images: [
       "/assets/عقارات 1.png",
       "/assets/عقارات 2.png",
@@ -30,28 +31,33 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    title: "مشروع  ملاعب",
-    description:
-      "تصميم واجهة مستخدم جميلة ومتجاوبة. تم التركيز على تجربة المستخدم وسهولة الاستخدام.",
-      images: [
-        "/assets/ملعب 1.png",
-        "/assets/ملعب 2.png",
-        "/assets/ملعب 3.png",
-        "/assets/ملعب 4.png",
-        "/assets/ملعب 5.png",
-        "/assets/ملعب 6.png",
-      ],
+    title: "Football Field Booking Platform",
+    description: `Built a responsive web app for booking football fields with filters, payment systems, and RESTful API integration.
+                  Includes a dashboard for field owners to manage bookings and pricing, and an admin panel for platform management.
+                  Users can browse fields, filter by name, city, and area, and make online reservations.
+                  `,
+    images: [
+      "/assets/ملعب 1.png",
+      "/assets/ملعب 2.png",
+      "/assets/ملعب 3.png",
+      "/assets/ملعب 4.png",
+      "/assets/ملعب 5.png",
+      "/assets/ملعب 6.png",
+    ],
   },
   {
     id: 3,
-    title: "مشروع السوشال ميديا",
-    description:
-      "منصة للتسوق الإلكتروني مع سلة مشتريات. تتيح المنصة للمستخدمين تصفح المنتجات وإكمال عمليات الشراء بسهولة.",
-      images: [
-        "/assets/سوشال 1.png",
-        "/assets/سوشال 2.png",
-        "/assets/سوشال 3.png",
-      ],
+    title: "Simple Product Purchase Platform",
+    description: `Developed a simple full-stack online platform with user authentication and order processing.
+                  Built responsive UI using React.tsx , and Tailwind CSS .
+                  Implemented RESTful APIs with Node.js , Express.js , and Sequelize ORM .
+                  Designed relational database schemas in MySQL with foreign key relationships.
+                  `,
+    images: [
+      "/assets/متجر 1.png",
+      "/assets/متجر 2.png",
+      "/assets/متجر 3.png",
+    ],
   },
 ];
 
