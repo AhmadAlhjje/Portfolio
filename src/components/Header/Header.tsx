@@ -9,7 +9,7 @@ const Header: React.FC = () => {
     <header className="fixed top-0 left-0 w-full py-4 px-8 bg-[#323946] z-50">
       <div className="flex justify-between items-center">
         {/* Logo */}
-        <RouterLink to="/Portfolio/" className="text-white text-2xl font-bold cursor-pointer">
+        <RouterLink to="/" className="text-white text-2xl font-bold cursor-pointer">
           Portfolio
         </RouterLink>
 

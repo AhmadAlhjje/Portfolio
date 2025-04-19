@@ -79,7 +79,7 @@ const Home: React.FC = () => {
         className="mt-8 md:mt-0"
       >
         <img
-          src="/assets/photo_2025-04-08_19-06-10.jpg"
+          src="/Portfolio/assets/photo_2025-04-08_19-06-10.jpg"
           alt="Profile"
           className="w-[80vw] h-[80vw] sm:w-[50vw] sm:h-[50vw] md:w-[55vw] md:h-[35vw] rounded-full animate-float object-cover"
         />
