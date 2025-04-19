@@ -31,7 +31,7 @@ const Home: React.FC = () => {
         <div className="flex justify-center md:justify-start space-x-4 mb-6">
           {/* WhatsApp Icon */}
           <a
-            href="https://wa.me/+963998107722"
+            href="https://wa.me/+963998107722" // استبدل الرقم برقمك الخاص
             target="_blank"
             rel="noopener noreferrer"
             className="flex justify-center items-center w-10 h-10 border-2 border-[#0ef] rounded-full text-[#0ef] hover:bg-[#0ef] hover:text-[#323946] transition-all duration-500"
@@ -79,7 +79,7 @@ const Home: React.FC = () => {
         className="mt-8 md:mt-0"
       >
         <img
-          src="/Portfolio/assets/photo_2025-04-08_19-06-10.jpg"
+          src="/assets/photo_2025-04-08_19-06-10.jpg"
           alt="Profile"
           className="w-[80vw] h-[80vw] sm:w-[50vw] sm:h-[50vw] md:w-[55vw] md:h-[35vw] rounded-full animate-float object-cover"
         />
