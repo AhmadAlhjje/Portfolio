@@ -18,21 +18,40 @@ const projects: Project[] = [
     title: "مشروع العقارات",
     description:
       "موقع إلكتروني لعرض العقارات وبيعها. يحتوي الموقع على واجهة مستخدم جميلة وميزات متقدمة مثل البحث عن العقارات وتصفية النتائج.",
-    images: ["/assets/عقارات 1.png", "/assets/عقارات 2.png", "/assets/عقارات 3.png", "/assets/عقارات 4.png", "/assets/عقارات 5.png", "/assets/عقارات 6.png", "/assets/عقارات 7.png"],
+    images: [
+      "/assets/عقارات 1.png",
+      "/assets/عقارات 2.png",
+      "/assets/عقارات 3.png",
+      "/assets/عقارات 4.png",
+      "/assets/عقارات 5.png",
+      "/assets/عقارات 6.png",
+      "/assets/عقارات 7.png",
+    ],
   },
   {
     id: 2,
-    title: "مشروع تصميم الويب",
+    title: "مشروع  ملاعب",
     description:
       "تصميم واجهة مستخدم جميلة ومتجاوبة. تم التركيز على تجربة المستخدم وسهولة الاستخدام.",
-    images: ["/assets/photo_2025-04-08_19-06-10.jpg", "/assets/عقارات 1.png"],
+      images: [
+        "/assets/ملعب 1.png",
+        "/assets/ملعب 2.png",
+        "/assets/ملعب 3.png",
+        "/assets/ملعب 4.png",
+        "/assets/ملعب 5.png",
+        "/assets/ملعب 6.png",
+      ],
   },
   {
     id: 3,
-    title: "مشروع التجارة الإلكترونية",
+    title: "مشروع السوشال ميديا",
     description:
       "منصة للتسوق الإلكتروني مع سلة مشتريات. تتيح المنصة للمستخدمين تصفح المنتجات وإكمال عمليات الشراء بسهولة.",
-    images: ["/assets/photo_2025-04-08_19-06-10.jpg", "/assets/عقارات 1.png"],
+      images: [
+        "/assets/سوشال 1.png",
+        "/assets/سوشال 2.png",
+        "/assets/سوشال 3.png",
+      ],
   },
 ];
 

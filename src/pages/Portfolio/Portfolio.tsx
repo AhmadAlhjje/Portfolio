@@ -20,16 +20,17 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    title: "مشروع تصميم الويب",
+    title: "مشروع ملاعب",
     description: "تصميم واجهة مستخدم جميلة ومتجاوبة.",
-    image: "/assets/photo_2025-04-08_19-06-10.jpg",
+    image: "/assets/ملعب 1.png",
   },
   {
     id: 3,
-    title: "مشروع التجارة الإلكترونية",
+    title: "مشروع السوشال ميديا",
     description: "منصة للتسوق الإلكتروني مع سلة مشتريات.",
-    image: "/assets/photo_2025-04-08_19-06-10.jpg",
+    image: "/assets/سوشال 1.png",
   },
+  
 ];
 
 const Portfolio: React.FC = () => {
